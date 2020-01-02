@@ -24,7 +24,7 @@
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center"><a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white bg-pink-600" data-toggle="tab"  onclick="changeAtiveTab(event,'tab-bookings')" role="tablist"> Upcoming bookings</a></li>
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center"><a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-pink-600 bg-white" data-toggle="tab"  onclick="changeAtiveTab(event,'tab-payment')" role="tablist"> Payment Ledger</a></li>
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center"><a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-pink-600 bg-white" data-toggle="tab"  onclick="changeAtiveTab(event,'tab-expense')" role="tablist"> Expense Request</a></li>
-            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center"><a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-pink-600 bg-white" href="https://monzo.me/dilwoarhussain?d=Badminton%20payment" target="_blank" role="tablist"> Pay Club</a></li>
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center"><a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-pink-600 bg-white" data-toggle="tab" onclick="changeAtiveTab(event,'tab-pay')" href="https://monzo.me/dilwoarhussain?d=Badminton%20payment" target="_blank" role="tablist"> Pay Club</a></li>
         </ul>
 
         <div class="tab-content">
@@ -39,6 +39,14 @@
     
             <div class="hidden" id="tab-expense">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfz6NWjOipu1XYW8row6VFfu2HjzI1bP-9uww-TjRiWCqtMtA/viewform?embedded=true" width="100%" height="1005" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+
+            <div class="hidden" id="tab-pay">
+                <a class="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all .15s ease"
+                    href="https://monzo.me/dilwoarhussain?d=Badminton%20payment" target="_blank"
+                >
+                    Pay Club
+                </a>
             </div>
         </div>
 
