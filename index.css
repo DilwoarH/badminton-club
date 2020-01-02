@@ -1,3 +1,10 @@
 #calendar {
     padding: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .tab-nav-item {
+        width: 100%;
+        margin: 10px;
+    }
+}
